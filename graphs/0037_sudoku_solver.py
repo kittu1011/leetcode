@@ -7,7 +7,6 @@ class Solution:
         rows = [set() for _ in range(9)]
         cols = [set() for _ in range(9)]
         sqrs = [set() for _ in range(9)]
-        ten = {str(i) for i in range(1,10)}
         empts = []
         for i in range(9):
             for j in range(9):
@@ -15,6 +14,7 @@ class Solution:
                 if ch == '.':
                     empts.append((i,j))
                     continue
+                
                 s = (i // 3) * 3 + (j // 3)
                 rows[i].add(ch)
                 cols[j].add(ch)
@@ -26,24 +26,24 @@ class Solution:
             
             i,j = empts[idx]
             ch = board[i][j]
-           
             s = (i // 3) * 3 + (j // 3)
-            nums = ten - (rows[i] | cols[j] | sqrs[s])
-
-            if not nums:
-                return False
             
-            for num in nums:
+            for num in "123456789":
+                if num in rows[i] or num in cols[j] or num in sqrs[s]:
+                    continue
                 rows[i].add(num)
                 cols[j].add(num)
                 sqrs[s].add(num)
                 board[i][j] = num
-                if helper(idx + 1) == True:
+
+                if helper(idx + 1):
                     return True
+                
                 rows[i].remove(num)
                 cols[j].remove(num)
                 sqrs[s].remove(num)
                 board[i][j] = '.'
+
             return False
         
         helper(0)
