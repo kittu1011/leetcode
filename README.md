@@ -27,7 +27,7 @@ Example: `0042_trapping_rain_water.py`
 
 | Difficulty | Solved |
 |------------|--------|
-| Easy | 17 |
+| Easy | 18 |
 | Medium | 17 |
 | Hard | 6 |
-| **Total** | **40** |
+| **Total** | **41** |
