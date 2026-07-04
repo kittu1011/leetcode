@@ -85,6 +85,7 @@ mkdir -p "$problem_dir"
 
 # solution.py stub
 cat > "$problem_dir/solution.py" << EOF
+# LeetCode $problem_number: $title
 class Solution:
     pass
 EOF
