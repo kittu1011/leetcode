@@ -29,5 +29,5 @@ Example: `0042_trapping_rain_water.py`
 |------------|--------|
 | Easy | 25 |
 | Medium | 28 |
-| Hard | 6 |
-| **Total** | **59** |
+| Hard | 7 |
+| **Total** | **60** |
