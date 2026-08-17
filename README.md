@@ -28,6 +28,6 @@ Example: `0042_trapping_rain_water.py`
 | Difficulty | Solved |
 |------------|--------|
 | Easy | 26 |
-| Medium | 29 |
+| Medium | 30 |
 | Hard | 7 |
-| **Total** | **62** |
+| **Total** | **63** |
