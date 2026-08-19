@@ -25,7 +25,7 @@ revisit: 10/3/2026
 
 ## Brute force
 Approach + complexity: Test every possible `k` starting from $1$ return the first one
-TC: $O(N*K)$ SC: $O(1)$
+TC: $O(N*\max(piles))$ SC: $O(1)$
 
 ## Optimized approach(es)
 
